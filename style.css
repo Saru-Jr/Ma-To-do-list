@@ -19,6 +19,17 @@ body {
   height: 100%;
 }
 
+.title-mode {
+  display: flex;
+  gap: 90px;
+  margin-bottom: 20px;
+  button {
+    width: 15%;
+    height: 40px;
+    margin-top: 20px;
+  }
+}
+
 .input-container {
   display: flex;
   gap: 10px;
@@ -56,6 +67,9 @@ li {
 li.done {
   text-decoration: line-through;
   color: gray;
+  .check {
+    color: rgb(0, 255, 0);
+  }
 }
 
 .filters {
@@ -67,4 +81,26 @@ li.done {
 .filter-btn.active {
   font-weight: bold;
   color: #007bff;
+}
+
+body.dark-mode {
+  background-color: #181a1b;
+  color: #f0f0f0;
+}
+
+body.dark-mode .container {
+  background-color: #242526;
+  color: #f0f0f0;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode button {
+  background-color: #3a3b3c;
+  color: #f0f0f0;
+  border: white solid 1px;
+  border-radius: 2px;
+}
+
+body.dark-mode .filter-btn.active {
+  color: #00bfff;
 }

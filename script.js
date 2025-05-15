@@ -1,3 +1,19 @@
+const toggleThemeBtn = document.getElementById('toggle-theme');
+const themeIcon = toggleThemeBtn.querySelector('i');
+
+// Charger le thème depuis localStorage
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-mode');
+  themeIcon.classList.replace('fa-sun', 'fa-moon');
+}
+
+// Changer de thème
+toggleThemeBtn.addEventListener('click', () => {
+  const isDark = document.body.classList.toggle('dark-mode');
+  themeIcon.classList.replace(isDark ? 'fa-sun' : 'fa-moon', isDark ? 'fa-moon' : 'fa-sun');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+});
+
 // === Sélecteurs ===
 const input = document.getElementById('task-input');
 const addBtn = document.getElementById('add-btn');
@@ -31,8 +47,8 @@ function renderTasks() {
     li.innerHTML = `
       <span>${task.text}</span>
       <div>
-        <button onclick="toggleDone(${index})">✅</button>
-        <button onclick="deleteTask(${index})">🗑️</button>
+        <button onclick="toggleDone(${index})" class="check"><i class="far fa-check-circle"></i></button>
+        <button onclick="deleteTask(${index})" class+"delete"><i class="far fa-trash-alt"></i></button>
       </div>
     `;
 
