@@ -1,72 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #000000e9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
-  .container {
-    margin-top: 30%;
-    background: rgba(255, 255, 255, 0.666);
-    padding: 20px;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 400px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 100%;
-    box-shadow: 0 0 10px white;
-  }
-  
-  .input-container {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
-    flex: 1;
-    padding: 10px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    cursor: pointer;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
 
-  p {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    justify-content: space-between;
-    padding: 8px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  li.done {
-    text-decoration: line-through;
-    color: gray;
-  }
-  
-  .filters {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .filter-btn.active {
-    font-weight: bold;
-    color: #007bff;
-  }
-  
+.container {
+  margin-top: 50px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.filter-btn.active {
+  font-weight: bold;
+  color: #007bff;
+}
