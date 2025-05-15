@@ -14,7 +14,7 @@ A small LocalStorage to add, make and finish everyday tasks
 
 ## Installation
 
-Install my-project with clonning the repository
+Install my-project withe clonning the repository
 
 ```bash
   https://github.com/Saru-Jr/Ma-To-do-list.git
